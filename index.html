@@ -6,23 +6,23 @@
 </head>
 
 <body>
-<script>
-	var workers = new Array();
-	var person = "";
-	var counter = 0;
-	
-	
-	while(person!="x"){
-		person = prompt("(press x to exit) Insert the name person: " );
-		workers[counter]=person;
-		counter++
-	}
-	workers.pop();
-	
-	for(var i=0; i<workers.length; i++){
-		document.write(workers[i] + "<br>");
-	}
+	<script>
+	var worker=new Array();
+	var person="";
+	var counter=0;
 		
-</script>
+	while(person!="x"){
+		person=prompt("(press x to exit) Intro name: ");
+		if(/^[A-Za-z]+$/.test(person)){	
+		worker[counter]=person;
+			counter++;
+		}else{alert("Numbers and special caracters dont allow")}
+	}
+	worker.pop();
+	for(var i=0; i<worker.length; i++){
+		document.write(worker[i] + "<br>");
+	}
+	</script>
+	
 </body>
 </html>
