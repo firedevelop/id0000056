@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>id0000056</title>
+</head>
+
+<body>
+<script>
+	var workers = new Array();
+	var person = "";
+	var counter = 0;
+	
+	
+	while(person!="x"){
+		person = prompt("(press x to exit) Insert the name person: " );
+		workers[counter]=person;
+		counter++
+	}
+	workers.pop();
+	
+	for(var i=0; i<workers.length; i++){
+		document.write(workers[i] + "<br>");
+	}
+		
+</script>
+</body>
+</html>
